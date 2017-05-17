@@ -4,11 +4,11 @@
     "description": "electron template with vuejs 2 , jquery 3, firebase 3",
     "main": "main.js",
     "scripts": {
-        "start": "electron $npm_package_main",
         "compile": "webpack",
-        "build-dev": "electron-packager . $npm_package_name",
-        "build": "electron-packager . $npm_package_name --ignore-node_modules/electron-* --asar",
-        "build-all": "electron-packager . $npm_package_name --ignore-node_modules/electron-* --asar --all"
+        "start": "electron main.js",
+        "build-dev": "electron-packager . appname",
+        "build": "electron-packager . appname --ignore-node_modules/electron-* --asar",
+        "build-all": "electron-packager . appname --ignore-node_modules/electron-* --asar --all"
     },
     "keywords": [
         "electron", "vuejs2", "jquery3", "firebase3"
